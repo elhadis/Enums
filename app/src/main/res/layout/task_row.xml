@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp"
+    android:layout_margin="8dp">
+
+
+    <TextView
+        android:id="@+id/name_task"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Task Name"
+        app:layout_constraintBaseline_toBaselineOf="@+id/task_status"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/task_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Status"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/name_task"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/task_note"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Notes of task empty"
+        app:layout_constraintBaseline_toBaselineOf="@+id/name_task"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/name_task"
+        app:layout_constraintTop_toBottomOf="@id/name_task" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
