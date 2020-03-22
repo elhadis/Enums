@@ -42,7 +42,9 @@ public class MainActivity extends AppCompatActivity {
         if(requestCode == NUM_REQUEST && resultCode == RESULT_OK){ //checking number request, and result of action in the page
             adapter.addTask(); //making update of RecycleView, becouse we made update Task List
 //            Toast.makeText(getBaseContext(), "Task Added", Toast.LENGTH_LONG).show(); // this code, just for test
-//            MainActivityAdapter adapter2 = new MainActivityAdapter();
+//            MainActivityAdaptadapter2 = new MainActivityAdapter();
+////            RecyclerView rv = findViewById(R.id.rv_list);
+////            rv.setAdapter(adapteer adapter2 = new MainActivityAdapter();
 //            RecyclerView rv = findViewById(R.id.rv_list);
 //            rv.setAdapter(adapter2);
         }else{

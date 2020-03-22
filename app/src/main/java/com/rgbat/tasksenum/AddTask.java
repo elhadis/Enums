@@ -9,6 +9,7 @@ import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.TextView;
@@ -28,9 +29,9 @@ public class AddTask extends AppCompatActivity {
             public void onClick(View v) {
 
 
-                TextView taskNameView = findViewById(R.id.task_name);
+                EditText taskNameView = findViewById(R.id.task_name);
                 final String taskName = taskNameView.getText().toString();
-                TextView taskNoteView = findViewById(R.id.task_note);
+                EditText taskNoteView = findViewById(R.id.task_note);
                  final String taskNote = taskNoteView.getText().toString();
                 RadioGroup radioGroup = findViewById(R.id.radio_group);
               final int selectedID = radioGroup.getCheckedRadioButtonId();

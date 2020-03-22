@@ -8,7 +8,8 @@ public class DataManager {
 
     private static ArrayList<Task> tasks = new ArrayList<>();
 
-    public static ArrayList<Task> getTasks() {
+    public static ArrayList<Task> getTasks()
+    {
         return tasks;
     }
 

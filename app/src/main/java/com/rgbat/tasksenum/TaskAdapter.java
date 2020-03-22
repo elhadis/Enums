@@ -1,5 +1,6 @@
 package com.rgbat.tasksenum;
 
+import android.graphics.Color;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -21,6 +22,17 @@ public class TaskAdapter extends RecyclerView.Adapter<MainActivityHolder> {
         holder.nameTask.setText(DataManager.getTasks().get(position).getNameTask());
         holder.taskNote.setText(DataManager.getTasks().get(position).getNote());
         holder.taskStatus.setText(DataManager.getTasks().get(position).getStatus().toString());
+        switch (DataManager.getTasks().get(position).getStatus()){
+            case TO_DO:
+                holder.taskStatus.setBackgroundColor(Color.GREEN);
+                break;
+            case IN_PROGRESS:
+                holder.taskStatus.setBackgroundColor(Color.BLUE);
+                break;
+            case COMPLETED:
+                holder.taskStatus.setBackgroundColor(Color.YELLOW);
+        }
+
     }
 
 
